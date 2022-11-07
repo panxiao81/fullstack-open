@@ -1,0 +1,11 @@
+note over browser:
+browser appends new note to JSON, 
+redraw the web page,
+and sends it to the server.
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server:
+server gets the data, and replace
+the old JSON with the new one.
+end note
+server-->browser: HTTP 201 Created
